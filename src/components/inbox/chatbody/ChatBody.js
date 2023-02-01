@@ -13,7 +13,7 @@ export default function ChatBody() {
                 />
                 <Messages />
                 <Options />
-                {/* <Blank /> */}
+
             </div>
         </div>
     );
