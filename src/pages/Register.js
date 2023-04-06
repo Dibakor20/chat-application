@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
 import logoImage from "../assets/images/lws-logo-light.svg";
+import { useState } from "react";
 
 export default function Register() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+
     return (
         <div className="grid place-items-center h-screen bg-[#F9FAFB">
             <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
@@ -33,6 +39,8 @@ export default function Register() {
                                     required
                                     className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-violet-500 focus:border-violet-500 focus:z-10 sm:text-sm"
                                     placeholder="Name"
+                                    value={name}
+                                    onChange={(e)=>setName(e.target.value)}
                                 />
                             </div>
 
@@ -51,6 +59,8 @@ export default function Register() {
                                     required
                                     className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-violet-500 focus:border-violet-500 focus:z-10 sm:text-sm"
                                     placeholder="Email address"
+                                    value={email}
+                                    onChange={(e)=>setEmail(e.target.value)}
                                 />
                             </div>
 
