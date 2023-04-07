@@ -3,9 +3,12 @@ import Conversation from "./pages/Conversation";
 import Inbox from "./pages/Inbox";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import useAuthCheck from "./hook/useAuthCheck";
 
 function App() {
-    return (
+    const authCheck = useAuthCheck();
+
+    return !authCheck ? ( <>checking authentication ...</> ) : (
         <Router>
             <Routes>
                 <Route path="/" element={<Login />} />
