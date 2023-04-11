@@ -23,6 +23,12 @@
       "password": "$2a$10$5xl9mVoK54ruWLQL.ZUgfOUoUp.NZa5NmehSnUh9LRY7nWZACD8ze",
       "name": "debakor",
       "id": 4
+    },
+    {
+      "email": "a@gmail.com",
+      "password": "$2a$10$g/5FwLJyfvxonp091JTwdewho7yK0eaZ3uY0wOCEOPMrFJYjQF.DC",
+      "name": "debakor",
+      "id": 5
     }
   ],
   "conversations": [
